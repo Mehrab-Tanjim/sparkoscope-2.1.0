@@ -1,0 +1,1134 @@
+Spark Command: /usr/lib/jvm/java-8-oracle/bin/java -cp /home/mehrab/spark-2.1.0-bin-custom-spark/conf/:/home/mehrab/spark-2.1.0-bin-custom-spark/jars/*:/home/mehrab/hadoop-2.7.3/etc/hadoop/ -Xmx1g org.apache.spark.deploy.history.HistoryServer
+========================================
+17/03/18 00:20:53 INFO history.HistoryServer: Started daemon with process name: 4029@localhost
+17/03/18 00:20:53 INFO util.SignalUtils: Registered signal handler for TERM
+17/03/18 00:20:53 INFO util.SignalUtils: Registered signal handler for HUP
+17/03/18 00:20:53 INFO util.SignalUtils: Registered signal handler for INT
+17/03/18 00:20:53 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/03/18 00:20:53 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:20:53 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/18 00:20:53 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:20:53 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/18 00:20:53 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/18 00:20:55 WARN util.Utils: Your hostname, localhost resolves to a loopback address: 127.0.0.1; using 192.168.10.100 instead (on interface wlan0)
+17/03/18 00:20:55 WARN util.Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/03/18 00:20:55 INFO util.log: Logging initialized @2332ms
+17/03/18 00:20:55 INFO server.Server: jetty-9.2.z-SNAPSHOT
+17/03/18 00:20:55 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@65b3a85a{/,null,AVAILABLE}
+17/03/18 00:20:55 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@34997338{/json,null,AVAILABLE}
+17/03/18 00:20:55 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@57eda880{/api,null,AVAILABLE}
+17/03/18 00:20:55 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2b5825fa{/static,null,AVAILABLE}
+17/03/18 00:20:55 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@53d1b9b3{/history,null,AVAILABLE}
+17/03/18 00:20:55 INFO server.ServerConnector: Started ServerConnector@60d1a32f{HTTP/1.1}{0.0.0.0:18080}
+17/03/18 00:20:55 INFO server.Server: Started @2488ms
+17/03/18 00:20:55 INFO util.Utils: Successfully started service on port 18080.
+17/03/18 00:20:55 INFO history.HistoryServer: Bound HistoryServer to 0.0.0.0, and started at http://192.168.10.100:18080
+17/03/18 00:20:55 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170317232631-0001
+17/03/18 00:20:55 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170317210728-0001
+17/03/18 00:22:07 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170318002200-0000.inprogress
+17/03/18 00:23:09 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170318002200-0000
+17/03/18 00:23:18 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:23:18 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/18 00:23:18 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:23:18 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/18 00:23:18 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/18 00:23:19 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170318002200-0000
+17/03/18 00:23:20 INFO history.FsHistoryProvider: Checking hdfs.metrics.dir
+17/03/18 00:23:20 INFO spark.SecurityManager: Changing acls enabled to: false
+17/03/18 00:23:20 INFO spark.SecurityManager: Changing admin acls to: 
+17/03/18 00:23:20 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:23:20 INFO spark.SecurityManager: Changing admin acls groups to: 
+17/03/18 00:23:20 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@64d65656{/history/app-20170318002200-0000/jobs,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@23c8232{/history/app-20170318002200-0000/jobs/json,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2d3bc59d{/history/app-20170318002200-0000/jobs/job,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1938047{/history/app-20170318002200-0000/jobs/job/json,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@53a14491{/history/app-20170318002200-0000/stages,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6ccbee6d{/history/app-20170318002200-0000/stages/json,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3e8880c8{/history/app-20170318002200-0000/stages/stage,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@42c624f8{/history/app-20170318002200-0000/stages/stage/json,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@790cb015{/history/app-20170318002200-0000/stages/pool,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@13eb1ed9{/history/app-20170318002200-0000/stages/pool/json,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4b34f7d1{/history/app-20170318002200-0000/storage,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@280da9de{/history/app-20170318002200-0000/storage/json,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@30721672{/history/app-20170318002200-0000/storage/rdd,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4d620b73{/history/app-20170318002200-0000/storage/rdd/json,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@16ae9da4{/history/app-20170318002200-0000/environment,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@63010175{/history/app-20170318002200-0000/environment/json,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@49c3497d{/history/app-20170318002200-0000/executors,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@31360bee{/history/app-20170318002200-0000/executors/json,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5c21a501{/static,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3ae204ea{/history/app-20170318002200-0000,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@30723580{/api,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@65fcb0fb{/jobs/job/kill,null,AVAILABLE}
+17/03/18 00:23:20 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@33936b77{/stages/stage/kill,null,AVAILABLE}
+17/03/18 00:23:21 WARN ui.JettyUtils: GET /history/app-20170318002200-0000/jobs/ failed: java.util.NoSuchElementException: None.get
+java.util.NoSuchElementException: None.get
+	at scala.None$.get(Option.scala:347)
+	at scala.None$.get(Option.scala:345)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:375)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:371)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:285)
+	at org.apache.spark.ui.jobs.AllJobsPage.render(AllJobsPage.scala:371)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.JettyUtils$$anon$3.doGet(JettyUtils.scala:85)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.spark_project.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.spark.deploy.history.ApplicationCacheCheckFilter.doFilter(ApplicationCache.scala:555)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.spark_project.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.spark_project.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.spark_project.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.spark_project.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.spark_project.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.spark_project.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.spark_project.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.spark_project.jetty.server.Server.handle(Server.java:499)
+	at org.spark_project.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.spark_project.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.spark_project.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:23:21 WARN servlet.ServletHandler: /history/app-20170318002200-0000/jobs/
+java.util.NoSuchElementException: None.get
+	at scala.None$.get(Option.scala:347)
+	at scala.None$.get(Option.scala:345)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:375)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:371)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:285)
+	at org.apache.spark.ui.jobs.AllJobsPage.render(AllJobsPage.scala:371)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.JettyUtils$$anon$3.doGet(JettyUtils.scala:85)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.spark_project.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.spark.deploy.history.ApplicationCacheCheckFilter.doFilter(ApplicationCache.scala:555)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.spark_project.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.spark_project.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.spark_project.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.spark_project.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.spark_project.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.spark_project.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.spark_project.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.spark_project.jetty.server.Server.handle(Server.java:499)
+	at org.spark_project.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.spark_project.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.spark_project.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:23:44 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:23:44 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/18 00:23:44 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:23:44 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/18 00:23:44 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/18 00:23:44 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170317232631-0001
+17/03/18 00:23:44 INFO history.FsHistoryProvider: Checking hdfs.metrics.dir
+17/03/18 00:23:45 INFO spark.SecurityManager: Changing acls enabled to: false
+17/03/18 00:23:45 INFO spark.SecurityManager: Changing admin acls to: 
+17/03/18 00:23:45 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:23:45 INFO spark.SecurityManager: Changing admin acls groups to: 
+17/03/18 00:23:45 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4ac24b49{/history/app-20170317232631-0001/jobs,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@68921a93{/history/app-20170317232631-0001/jobs/json,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@51d0f9d3{/history/app-20170317232631-0001/jobs/job,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7f4de7f0{/history/app-20170317232631-0001/jobs/job/json,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@23023f12{/history/app-20170317232631-0001/stages,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2d95090f{/history/app-20170317232631-0001/stages/json,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@38c0e4ce{/history/app-20170317232631-0001/stages/stage,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@38b3dd18{/history/app-20170317232631-0001/stages/stage/json,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@48ac0fa8{/history/app-20170317232631-0001/stages/pool,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@8eab69f{/history/app-20170317232631-0001/stages/pool/json,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7c224d71{/history/app-20170317232631-0001/storage,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@308dc7e8{/history/app-20170317232631-0001/storage/json,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5433f8b3{/history/app-20170317232631-0001/storage/rdd,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@111e8e36{/history/app-20170317232631-0001/storage/rdd/json,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@43b45ec9{/history/app-20170317232631-0001/environment,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7c83f9bb{/history/app-20170317232631-0001/environment/json,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5b27f5ae{/history/app-20170317232631-0001/executors,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6c0b7e0d{/history/app-20170317232631-0001/executors/json,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@17cf695c{/static,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1f99ae4f{/history/app-20170317232631-0001,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@b693cfa{/api,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7f790c9a{/jobs/job/kill,null,AVAILABLE}
+17/03/18 00:23:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@64be210e{/stages/stage/kill,null,AVAILABLE}
+17/03/18 00:23:50 WARN ui.JettyUtils: GET /history/app-20170318002200-0000/jobs/ failed: java.util.NoSuchElementException: None.get
+java.util.NoSuchElementException: None.get
+	at scala.None$.get(Option.scala:347)
+	at scala.None$.get(Option.scala:345)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:375)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:371)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:285)
+	at org.apache.spark.ui.jobs.AllJobsPage.render(AllJobsPage.scala:371)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.JettyUtils$$anon$3.doGet(JettyUtils.scala:85)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.spark_project.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.spark.deploy.history.ApplicationCacheCheckFilter.doFilter(ApplicationCache.scala:555)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.spark_project.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.spark_project.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.spark_project.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.spark_project.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.spark_project.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.spark_project.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.spark_project.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.spark_project.jetty.server.Server.handle(Server.java:499)
+	at org.spark_project.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.spark_project.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.spark_project.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:23:50 WARN servlet.ServletHandler: /history/app-20170318002200-0000/jobs/
+java.util.NoSuchElementException: None.get
+	at scala.None$.get(Option.scala:347)
+	at scala.None$.get(Option.scala:345)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:375)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:371)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:285)
+	at org.apache.spark.ui.jobs.AllJobsPage.render(AllJobsPage.scala:371)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.JettyUtils$$anon$3.doGet(JettyUtils.scala:85)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.spark_project.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.spark.deploy.history.ApplicationCacheCheckFilter.doFilter(ApplicationCache.scala:555)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.spark_project.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.spark_project.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.spark_project.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.spark_project.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.spark_project.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.spark_project.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.spark_project.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.spark_project.jetty.server.Server.handle(Server.java:499)
+	at org.spark_project.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.spark_project.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.spark_project.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:33:02 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170318003259-0001.inprogress
+17/03/18 00:34:13 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170318003259-0001
+17/03/18 00:34:19 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:34:19 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/18 00:34:19 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:34:19 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/18 00:34:19 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/18 00:34:19 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170318003259-0001
+17/03/18 00:34:19 INFO history.FsHistoryProvider: Checking hdfs.metrics.dir
+17/03/18 00:34:19 INFO spark.SecurityManager: Changing acls enabled to: false
+17/03/18 00:34:19 INFO spark.SecurityManager: Changing admin acls to: 
+17/03/18 00:34:19 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:34:19 INFO spark.SecurityManager: Changing admin acls groups to: 
+17/03/18 00:34:19 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@228d6d1e{/history/app-20170318003259-0001/jobs,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3fbc3526{/history/app-20170318003259-0001/jobs/json,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@14c12d50{/history/app-20170318003259-0001/jobs/job,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@97d29d7{/history/app-20170318003259-0001/jobs/job/json,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2362198f{/history/app-20170318003259-0001/stages,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@25f9aa31{/history/app-20170318003259-0001/stages/json,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@86bbf6e{/history/app-20170318003259-0001/stages/stage,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@75120b08{/history/app-20170318003259-0001/stages/stage/json,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@28960bd8{/history/app-20170318003259-0001/stages/pool,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@44775699{/history/app-20170318003259-0001/stages/pool/json,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3b4d07f7{/history/app-20170318003259-0001/storage,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@26545a3e{/history/app-20170318003259-0001/storage/json,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3e27af33{/history/app-20170318003259-0001/storage/rdd,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2a3ea6ac{/history/app-20170318003259-0001/storage/rdd/json,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@77450b00{/history/app-20170318003259-0001/environment,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7a1b7020{/history/app-20170318003259-0001/environment/json,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1212d811{/history/app-20170318003259-0001/executors,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6b719808{/history/app-20170318003259-0001/executors/json,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2401a95a{/static,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5adc22c9{/history/app-20170318003259-0001,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6a080b7a{/api,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6f1bd57{/jobs/job/kill,null,AVAILABLE}
+17/03/18 00:34:19 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@30b6f429{/stages/stage/kill,null,AVAILABLE}
+17/03/18 00:45:48 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.0b53186d-0bc2-4ee3-942a-e1e1a4a171c0. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:45:58 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.33849772-9987-4006-9a7a-79b11f503ea9. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:46:08 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.9d37f40c-070d-4655-891a-053a44f42827. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:46:18 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.b798c4b4-3aee-4d48-a102-48ca41240b22. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:46:28 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.29becb81-61ff-4bca-b5e4-4bcde626d062. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:46:38 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.9190bdf0-7951-4ecc-9fbd-bc2816565cb7. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:46:48 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.2982daf7-9faf-41d7-a49e-1d5b2e7a1c87. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:46:58 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.f6c73d0e-c2d6-4cf3-a40b-b9a5a3201ea0. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:47:08 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.96a70d72-c810-49ea-bdf9-ae73692e5ffc. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:47:18 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.e6d9ec30-430f-4bc6-b895-08a221b6995e. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:47:28 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.fcad058d-c3dc-42e6-9200-c5f637775c09. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:47:38 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.dd021055-f287-4dcc-bd18-611e82db0009. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:47:48 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.49bbb0ff-a497-42de-a1d5-167b116a02b9. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:47:58 ERROR history.FsHistoryProvider: Exception in checking for event log updates
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.SafeModeException): Cannot create file/spark-logs/.69e9c80a-70de-4dd2-964a-1b8bf7894950. Name node is in safe mode.
+Resources are low on NN. Please add or free up more resources then turn off safe mode manually. NOTE:  If you turn off safe mode before adding resources, the NN will immediately return to safe mode. Use "hdfs dfsadmin -safemode leave" to turn safe mode off.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1327)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2445)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2334)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:624)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:397)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1410)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1363)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:190)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:103)
+	at com.sun.proxy.$Proxy9.create(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:258)
+	at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:1600)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1465)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:394)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$6.doCall(DistributedFileSystem.java:390)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:390)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:334)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getNewLastScanTime(FsHistoryProvider.scala:423)
+	at org.apache.spark.deploy.history.FsHistoryProvider.checkForLogs(FsHistoryProvider.scala:347)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$org$apache$spark$deploy$history$FsHistoryProvider$$startPolling$1.apply$mcV$sp(FsHistoryProvider.scala:215)
+	at org.apache.spark.util.Utils$.tryOrExit(Utils.scala:1228)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anon$1.run(FsHistoryProvider.scala:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:48:09 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170318004541-0002.inprogress
+17/03/18 00:48:19 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170318004811-0004.inprogress
+17/03/18 00:49:00 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170318004811-0004
+17/03/18 00:49:24 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:49:24 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/18 00:49:24 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:49:24 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/18 00:49:24 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/18 00:49:24 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170318004811-0004
+17/03/18 00:49:24 INFO history.FsHistoryProvider: Checking hdfs.metrics.dir
+17/03/18 00:49:24 INFO spark.SecurityManager: Changing acls enabled to: false
+17/03/18 00:49:24 INFO spark.SecurityManager: Changing admin acls to: 
+17/03/18 00:49:24 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:49:24 INFO spark.SecurityManager: Changing admin acls groups to: 
+17/03/18 00:49:24 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@f07bd3{/history/app-20170318004811-0004/jobs,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6ea4ce87{/history/app-20170318004811-0004/jobs/json,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4ecc104b{/history/app-20170318004811-0004/jobs/job,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3a610464{/history/app-20170318004811-0004/jobs/job/json,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5705a12c{/history/app-20170318004811-0004/stages,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5ed5b7ae{/history/app-20170318004811-0004/stages/json,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@70d2e57e{/history/app-20170318004811-0004/stages/stage,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@414d0821{/history/app-20170318004811-0004/stages/stage/json,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@d921ae4{/history/app-20170318004811-0004/stages/pool,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@236ee90d{/history/app-20170318004811-0004/stages/pool/json,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@33e94ebd{/history/app-20170318004811-0004/storage,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3226c7af{/history/app-20170318004811-0004/storage/json,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6cf0e1fb{/history/app-20170318004811-0004/storage/rdd,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2d99ca88{/history/app-20170318004811-0004/storage/rdd/json,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7d698dbd{/history/app-20170318004811-0004/environment,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@406b9f4{/history/app-20170318004811-0004/environment/json,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@497f3e4c{/history/app-20170318004811-0004/executors,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@581fb8db{/history/app-20170318004811-0004/executors/json,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@424698a0{/static,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@35a7d177{/history/app-20170318004811-0004,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6baea690{/api,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@75208c6d{/jobs/job/kill,null,AVAILABLE}
+17/03/18 00:49:24 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@44be7652{/stages/stage/kill,null,AVAILABLE}
+17/03/18 00:49:24 WARN ui.JettyUtils: GET /history/app-20170318004811-0004/jobs/ failed: java.util.NoSuchElementException: None.get
+java.util.NoSuchElementException: None.get
+	at scala.None$.get(Option.scala:347)
+	at scala.None$.get(Option.scala:345)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:375)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:371)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:285)
+	at org.apache.spark.ui.jobs.AllJobsPage.render(AllJobsPage.scala:371)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.JettyUtils$$anon$3.doGet(JettyUtils.scala:85)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.spark_project.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.spark.deploy.history.ApplicationCacheCheckFilter.doFilter(ApplicationCache.scala:555)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.spark_project.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.spark_project.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.spark_project.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.spark_project.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.spark_project.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.spark_project.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.spark_project.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.spark_project.jetty.server.Server.handle(Server.java:499)
+	at org.spark_project.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.spark_project.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.spark_project.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 00:49:24 WARN servlet.ServletHandler: /history/app-20170318004811-0004/jobs/
+java.util.NoSuchElementException: None.get
+	at scala.None$.get(Option.scala:347)
+	at scala.None$.get(Option.scala:345)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:375)
+	at org.apache.spark.ui.jobs.AllJobsPage$$anonfun$29.apply(AllJobsPage.scala:371)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:285)
+	at org.apache.spark.ui.jobs.AllJobsPage.render(AllJobsPage.scala:371)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:82)
+	at org.apache.spark.ui.JettyUtils$$anon$3.doGet(JettyUtils.scala:85)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.spark_project.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.spark.deploy.history.ApplicationCacheCheckFilter.doFilter(ApplicationCache.scala:555)
+	at org.spark_project.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.spark_project.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.spark_project.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.spark_project.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.spark_project.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.spark_project.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.spark_project.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.spark_project.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.spark_project.jetty.server.Server.handle(Server.java:499)
+	at org.spark_project.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.spark_project.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.spark_project.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/18 01:10:48 ERROR history.HistoryServer: RECEIVED SIGNAL TERM
+17/03/18 01:10:48 INFO server.ServerConnector: Stopped ServerConnector@60d1a32f{HTTP/1.1}{0.0.0.0:18080}
+17/03/18 01:10:48 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@53d1b9b3{/history,null,UNAVAILABLE}
+17/03/18 01:10:48 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@2b5825fa{/static,null,UNAVAILABLE}
+17/03/18 01:10:49 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@57eda880{/api,null,UNAVAILABLE}
+17/03/18 01:10:49 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@34997338{/json,null,UNAVAILABLE}
+17/03/18 01:10:49 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@65b3a85a{/,null,UNAVAILABLE}
+17/03/18 01:10:49 INFO util.ShutdownHookManager: Shutdown hook called

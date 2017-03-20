@@ -1,0 +1,41 @@
+Spark Command: /usr/lib/jvm/java-8-oracle/bin/java -cp /home/mehrab/spark-2.1.0-bin-custom-spark/conf/:/home/mehrab/spark-2.1.0-bin-custom-spark/jars/*:/home/mehrab/hadoop-2.7.3/etc/hadoop/ -Xmx1g org.apache.spark.deploy.master.Master --host Mehrab-Laptop --port 7077 --webui-port 8080
+========================================
+17/03/18 00:14:25 INFO master.Master: Started daemon with process name: 3751@localhost
+17/03/18 00:14:25 INFO util.SignalUtils: Registered signal handler for TERM
+17/03/18 00:14:25 INFO util.SignalUtils: Registered signal handler for HUP
+17/03/18 00:14:25 INFO util.SignalUtils: Registered signal handler for INT
+17/03/18 00:14:25 WARN util.Utils: Your hostname, localhost resolves to a loopback address: 127.0.0.1; using 192.168.10.100 instead (on interface wlan0)
+17/03/18 00:14:25 WARN util.Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/03/18 00:14:26 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/03/18 00:14:26 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:14:26 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/18 00:14:26 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:14:26 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/18 00:14:26 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/18 00:14:27 INFO util.Utils: Successfully started service 'sparkMaster' on port 7077.
+17/03/18 00:14:27 INFO master.Master: Starting Spark master at spark://Mehrab-Laptop:7077
+17/03/18 00:14:27 INFO master.Master: Running Spark version 2.1.0
+17/03/18 00:14:27 INFO util.log: Logging initialized @10267ms
+17/03/18 00:14:27 INFO server.Server: jetty-9.2.z-SNAPSHOT
+17/03/18 00:14:28 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@53a4db33{/app,null,AVAILABLE}
+17/03/18 00:14:28 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@48f7bda8{/app/json,null,AVAILABLE}
+17/03/18 00:14:28 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@9e945ed{/,null,AVAILABLE}
+17/03/18 00:14:28 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@65ec8d69{/json,null,AVAILABLE}
+17/03/18 00:14:28 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@10e4bfa4{/static,null,AVAILABLE}
+17/03/18 00:14:28 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@658b5aed{/app/kill,null,AVAILABLE}
+17/03/18 00:14:28 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@268ebd9c{/driver/kill,null,AVAILABLE}
+17/03/18 00:14:28 INFO server.ServerConnector: Started ServerConnector@4596b168{HTTP/1.1}{0.0.0.0:8080}
+17/03/18 00:14:28 INFO server.Server: Started @10563ms
+17/03/18 00:14:28 INFO util.Utils: Successfully started service 'MasterUI' on port 8080.
+17/03/18 00:14:28 INFO ui.MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://192.168.10.100:8080
+17/03/18 00:14:28 INFO server.Server: jetty-9.2.z-SNAPSHOT
+17/03/18 00:14:28 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6e20257d{/,null,AVAILABLE}
+17/03/18 00:14:28 INFO server.ServerConnector: Started ServerConnector@1451571d{HTTP/1.1}{Mehrab-Laptop:6066}
+17/03/18 00:14:28 INFO server.Server: Started @10640ms
+17/03/18 00:14:28 INFO util.Utils: Successfully started service on port 6066.
+17/03/18 00:14:28 INFO rest.StandaloneRestServer: Started REST server for submitting applications on port 6066
+17/03/18 00:14:28 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@23231036{/metrics/master/json,null,AVAILABLE}
+17/03/18 00:14:28 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@187bcaa1{/metrics/applications/json,null,AVAILABLE}
+17/03/18 00:14:28 INFO master.Master: I have been elected leader! New state: ALIVE
+17/03/18 00:14:28 INFO master.Master: Registering worker 192.168.10.100:53386 with 8 cores, 6.7 GB RAM
+17/03/18 00:15:08 ERROR master.Master: RECEIVED SIGNAL TERM

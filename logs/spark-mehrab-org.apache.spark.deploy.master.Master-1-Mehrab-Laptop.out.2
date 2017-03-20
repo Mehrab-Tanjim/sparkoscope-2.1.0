@@ -1,0 +1,81 @@
+Spark Command: /usr/lib/jvm/java-8-oracle/bin/java -cp /home/mehrab/spark-2.1.0-bin-custom-spark/conf/:/home/mehrab/spark-2.1.0-bin-custom-spark/jars/*:/home/mehrab/hadoop-2.7.3/etc/hadoop/ -Xmx1g org.apache.spark.deploy.master.Master --host Mehrab-Laptop --port 7077 --webui-port 8080
+========================================
+17/03/18 00:20:42 INFO master.Master: Started daemon with process name: 3793@localhost
+17/03/18 00:20:42 INFO util.SignalUtils: Registered signal handler for TERM
+17/03/18 00:20:42 INFO util.SignalUtils: Registered signal handler for HUP
+17/03/18 00:20:42 INFO util.SignalUtils: Registered signal handler for INT
+17/03/18 00:20:42 WARN util.Utils: Your hostname, localhost resolves to a loopback address: 127.0.0.1; using 192.168.10.100 instead (on interface wlan0)
+17/03/18 00:20:42 WARN util.Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/03/18 00:20:43 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/03/18 00:20:43 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 00:20:43 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/18 00:20:43 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 00:20:43 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/18 00:20:43 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/18 00:20:44 INFO util.Utils: Successfully started service 'sparkMaster' on port 7077.
+17/03/18 00:20:44 INFO master.Master: Starting Spark master at spark://Mehrab-Laptop:7077
+17/03/18 00:20:44 INFO master.Master: Running Spark version 2.1.0
+17/03/18 00:20:45 INFO util.log: Logging initialized @5642ms
+17/03/18 00:20:45 INFO server.Server: jetty-9.2.z-SNAPSHOT
+17/03/18 00:20:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2a78266a{/app,null,AVAILABLE}
+17/03/18 00:20:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1839a31b{/app/json,null,AVAILABLE}
+17/03/18 00:20:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1ba263cb{/,null,AVAILABLE}
+17/03/18 00:20:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4fea068e{/json,null,AVAILABLE}
+17/03/18 00:20:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@244a326f{/static,null,AVAILABLE}
+17/03/18 00:20:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@713e7c86{/app/kill,null,AVAILABLE}
+17/03/18 00:20:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@790ae551{/driver/kill,null,AVAILABLE}
+17/03/18 00:20:45 INFO server.ServerConnector: Started ServerConnector@1f23f72a{HTTP/1.1}{0.0.0.0:8080}
+17/03/18 00:20:45 INFO server.Server: Started @5905ms
+17/03/18 00:20:45 INFO util.Utils: Successfully started service 'MasterUI' on port 8080.
+17/03/18 00:20:45 INFO ui.MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://192.168.10.100:8080
+17/03/18 00:20:45 INFO server.Server: jetty-9.2.z-SNAPSHOT
+17/03/18 00:20:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7ac27778{/,null,AVAILABLE}
+17/03/18 00:20:45 INFO server.ServerConnector: Started ServerConnector@75a4ad5a{HTTP/1.1}{Mehrab-Laptop:6066}
+17/03/18 00:20:45 INFO server.Server: Started @5978ms
+17/03/18 00:20:45 INFO util.Utils: Successfully started service on port 6066.
+17/03/18 00:20:45 INFO rest.StandaloneRestServer: Started REST server for submitting applications on port 6066
+17/03/18 00:20:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@9b5366e{/metrics/master/json,null,AVAILABLE}
+17/03/18 00:20:45 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4b9c4458{/metrics/applications/json,null,AVAILABLE}
+17/03/18 00:20:45 INFO master.Master: I have been elected leader! New state: ALIVE
+17/03/18 00:20:45 INFO master.Master: Registering worker 192.168.10.100:46341 with 8 cores, 6.7 GB RAM
+17/03/18 00:22:00 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 00:22:00 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318002200-0000
+17/03/18 00:22:00 INFO master.Master: Launching executor app-20170318002200-0000/0 on worker worker-20170318002044-192.168.10.100-46341
+17/03/18 00:23:01 INFO master.Master: Received unregister request from application app-20170318002200-0000
+17/03/18 00:23:01 INFO master.Master: Removing app app-20170318002200-0000
+17/03/18 00:23:01 INFO master.Master: 127.0.0.1:58143 got disassociated, removing it.
+17/03/18 00:23:01 INFO master.Master: 192.168.10.100:57339 got disassociated, removing it.
+17/03/18 00:23:01 WARN master.Master: Got status update for unknown executor app-20170318002200-0000/0
+17/03/18 00:32:59 INFO master.Master: Registering app Spark Pi
+17/03/18 00:32:59 INFO master.Master: Registered app Spark Pi with ID app-20170318003259-0001
+17/03/18 00:32:59 INFO master.Master: Launching executor app-20170318003259-0001/0 on worker worker-20170318002044-192.168.10.100-46341
+17/03/18 00:34:06 INFO master.Master: Received unregister request from application app-20170318003259-0001
+17/03/18 00:34:06 INFO master.Master: Removing app app-20170318003259-0001
+17/03/18 00:34:06 INFO master.Master: 127.0.0.1:58412 got disassociated, removing it.
+17/03/18 00:34:06 INFO master.Master: 192.168.10.100:39104 got disassociated, removing it.
+17/03/18 00:34:06 WARN master.Master: Got status update for unknown executor app-20170318003259-0001/0
+17/03/18 00:45:41 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 00:45:41 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318004541-0002
+17/03/18 00:45:41 INFO master.Master: Launching executor app-20170318004541-0002/0 on worker worker-20170318002044-192.168.10.100-46341
+17/03/18 00:45:56 INFO master.Master: Received unregister request from application app-20170318004541-0002
+17/03/18 00:45:56 INFO master.Master: Removing app app-20170318004541-0002
+17/03/18 00:45:56 INFO master.Master: 127.0.0.1:58578 got disassociated, removing it.
+17/03/18 00:45:56 INFO master.Master: 192.168.10.100:35114 got disassociated, removing it.
+17/03/18 00:45:57 WARN master.Master: Got status update for unknown executor app-20170318004541-0002/0
+17/03/18 00:47:27 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 00:47:27 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318004727-0003
+17/03/18 00:47:27 INFO master.Master: Launching executor app-20170318004727-0003/0 on worker worker-20170318002044-192.168.10.100-46341
+17/03/18 00:47:28 INFO master.Master: Received unregister request from application app-20170318004727-0003
+17/03/18 00:47:28 INFO master.Master: Removing app app-20170318004727-0003
+17/03/18 00:47:28 INFO master.Master: 127.0.0.1:58599 got disassociated, removing it.
+17/03/18 00:47:28 INFO master.Master: 192.168.10.100:50538 got disassociated, removing it.
+17/03/18 00:47:28 WARN master.Master: Got status update for unknown executor app-20170318004727-0003/0
+17/03/18 00:48:11 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 00:48:11 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318004811-0004
+17/03/18 00:48:11 INFO master.Master: Launching executor app-20170318004811-0004/0 on worker worker-20170318002044-192.168.10.100-46341
+17/03/18 00:48:59 INFO master.Master: Received unregister request from application app-20170318004811-0004
+17/03/18 00:48:59 INFO master.Master: Removing app app-20170318004811-0004
+17/03/18 00:48:59 INFO master.Master: 127.0.0.1:58609 got disassociated, removing it.
+17/03/18 00:48:59 INFO master.Master: 192.168.10.100:37435 got disassociated, removing it.
+17/03/18 00:49:00 WARN master.Master: Got status update for unknown executor app-20170318004811-0004/0
+17/03/18 01:10:49 ERROR master.Master: RECEIVED SIGNAL TERM

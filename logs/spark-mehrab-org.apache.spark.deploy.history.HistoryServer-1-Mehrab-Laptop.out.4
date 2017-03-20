@@ -1,0 +1,135 @@
+Spark Command: /usr/lib/jvm/java-8-oracle/bin/java -cp /home/mehrab/spark-2.1.0-bin-custom-spark/conf/:/home/mehrab/spark-2.1.0-bin-custom-spark/jars/*:/home/mehrab/hadoop-2.7.3/etc/hadoop/ -Xmx1g org.apache.spark.deploy.history.HistoryServer
+========================================
+17/03/17 23:17:26 INFO history.HistoryServer: Started daemon with process name: 15047@localhost
+17/03/17 23:17:26 INFO util.SignalUtils: Registered signal handler for TERM
+17/03/17 23:17:26 INFO util.SignalUtils: Registered signal handler for HUP
+17/03/17 23:17:26 INFO util.SignalUtils: Registered signal handler for INT
+17/03/17 23:17:27 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/03/17 23:17:27 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/17 23:17:27 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/17 23:17:27 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/17 23:17:27 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/17 23:17:27 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/17 23:17:28 WARN util.Utils: Your hostname, localhost resolves to a loopback address: 127.0.0.1; using 192.168.10.100 instead (on interface wlan0)
+17/03/17 23:17:28 WARN util.Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/03/17 23:17:29 INFO util.log: Logging initialized @2865ms
+17/03/17 23:17:29 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170317210728-0001
+17/03/17 23:17:29 INFO server.Server: jetty-9.2.z-SNAPSHOT
+17/03/17 23:17:29 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@65b3a85a{/,null,AVAILABLE}
+17/03/17 23:17:29 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@34997338{/json,null,AVAILABLE}
+17/03/17 23:17:29 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@57eda880{/api,null,AVAILABLE}
+17/03/17 23:17:29 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2b5825fa{/static,null,AVAILABLE}
+17/03/17 23:17:29 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@53d1b9b3{/history,null,AVAILABLE}
+17/03/17 23:17:29 INFO server.ServerConnector: Started ServerConnector@345daff3{HTTP/1.1}{0.0.0.0:18080}
+17/03/17 23:17:29 INFO server.Server: Started @3267ms
+17/03/17 23:17:29 INFO util.Utils: Successfully started service on port 18080.
+17/03/17 23:17:29 INFO history.HistoryServer: Bound HistoryServer to 0.0.0.0, and started at http://192.168.10.100:18080
+17/03/17 23:25:02 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/17 23:25:02 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/17 23:25:02 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/17 23:25:02 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/17 23:25:02 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/17 23:25:02 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170317210728-0001
+17/03/17 23:25:04 INFO history.FsHistoryProvider: Checking hdfs.metrics.dir
+17/03/17 23:25:05 WARN servlet.ServletHandler: /history/app-20170317210728-0001/1/jobs/
+java.io.IOException: Cannot obtain block length for LocatedBlock{BP-1759353188-127.0.0.1-1489763097828:blk_1073741826_1002; getBlockSize()=564; corrupt=false; offset=0; locs=[127.0.0.1:50010]}
+	at org.apache.hadoop.hdfs.DFSInputStream.readBlockLength(DFSInputStream.java:350)
+	at org.apache.hadoop.hdfs.DFSInputStream.fetchLocatedBlocksAndGetLastBlockLength(DFSInputStream.java:294)
+	at org.apache.hadoop.hdfs.DFSInputStream.openInfo(DFSInputStream.java:231)
+	at org.apache.hadoop.hdfs.DFSInputStream.<init>(DFSInputStream.java:224)
+	at org.apache.hadoop.hdfs.DFSClient.open(DFSClient.java:1295)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$3.doCall(DistributedFileSystem.java:300)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$3.doCall(DistributedFileSystem.java:296)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.open(DistributedFileSystem.java:296)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:764)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$getAppUI$1$$anonfun$apply$3.apply(FsHistoryProvider.scala:276)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$getAppUI$1$$anonfun$apply$3.apply(FsHistoryProvider.scala:239)
+	at scala.Option.flatMap(Option.scala:171)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$getAppUI$1.apply(FsHistoryProvider.scala:239)
+	at org.apache.spark.deploy.history.FsHistoryProvider$$anonfun$getAppUI$1.apply(FsHistoryProvider.scala:238)
+	at scala.Option.flatMap(Option.scala:171)
+	at org.apache.spark.deploy.history.FsHistoryProvider.getAppUI(FsHistoryProvider.scala:238)
+	at org.apache.spark.deploy.history.HistoryServer.getAppUI(HistoryServer.scala:170)
+	at org.apache.spark.deploy.history.ApplicationCache$$anonfun$loadApplicationEntry$2.apply(ApplicationCache.scala:280)
+	at org.apache.spark.deploy.history.ApplicationCache$$anonfun$loadApplicationEntry$2.apply(ApplicationCache.scala:280)
+	at org.apache.spark.deploy.history.ApplicationCache.time(ApplicationCache.scala:252)
+	at org.apache.spark.deploy.history.ApplicationCache.loadApplicationEntry(ApplicationCache.scala:279)
+	at org.apache.spark.deploy.history.ApplicationCache$$anon$1.load(ApplicationCache.scala:65)
+	at org.apache.spark.deploy.history.ApplicationCache$$anon$1.load(ApplicationCache.scala:61)
+	at org.spark_project.guava.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at org.spark_project.guava.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at org.spark_project.guava.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at org.spark_project.guava.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at org.spark_project.guava.cache.LocalCache.get(LocalCache.java:4000)
+	at org.spark_project.guava.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at org.spark_project.guava.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at org.apache.spark.deploy.history.ApplicationCache.lookupAndUpdate(ApplicationCache.scala:183)
+	at org.apache.spark.deploy.history.ApplicationCache.get(ApplicationCache.scala:165)
+	at org.apache.spark.deploy.history.HistoryServer.org$apache$spark$deploy$history$HistoryServer$$loadAppUi(HistoryServer.scala:227)
+	at org.apache.spark.deploy.history.HistoryServer$$anon$1.doGet(HistoryServer.scala:86)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.spark_project.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.spark_project.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.spark_project.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.spark_project.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.spark_project.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.spark_project.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.spark_project.jetty.servlets.gzip.GzipHandler.handle(GzipHandler.java:479)
+	at org.spark_project.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.spark_project.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.spark_project.jetty.server.Server.handle(Server.java:499)
+	at org.spark_project.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.spark_project.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.spark_project.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.spark_project.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/17 23:26:40 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170317232631-0001.inprogress
+17/03/17 23:27:31 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170317232631-0001
+17/03/17 23:28:04 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/17 23:28:04 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/17 23:28:04 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/17 23:28:04 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/17 23:28:04 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/17 23:28:04 INFO history.FsHistoryProvider: Replaying log path: hdfs://127.0.0.1:9000/spark-logs/app-20170317232631-0001
+17/03/17 23:28:05 INFO history.FsHistoryProvider: Checking hdfs.metrics.dir
+17/03/17 23:28:05 INFO spark.SecurityManager: Changing acls enabled to: false
+17/03/17 23:28:05 INFO spark.SecurityManager: Changing admin acls to: 
+17/03/17 23:28:05 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/17 23:28:05 INFO spark.SecurityManager: Changing admin acls groups to: 
+17/03/17 23:28:05 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@390af351{/history/app-20170317232631-0001/jobs,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6119487e{/history/app-20170317232631-0001/jobs/json,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@479e5e79{/history/app-20170317232631-0001/jobs/job,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@290547b2{/history/app-20170317232631-0001/jobs/job/json,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@56e0b753{/history/app-20170317232631-0001/stages,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@72a1e496{/history/app-20170317232631-0001/stages/json,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@b7231a{/history/app-20170317232631-0001/stages/stage,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5c5a57bf{/history/app-20170317232631-0001/stages/stage/json,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@44b395ac{/history/app-20170317232631-0001/stages/pool,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7fdf211f{/history/app-20170317232631-0001/stages/pool/json,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@74d89c91{/history/app-20170317232631-0001/storage,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@30c42a98{/history/app-20170317232631-0001/storage/json,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5f1b3f86{/history/app-20170317232631-0001/storage/rdd,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@510495d9{/history/app-20170317232631-0001/storage/rdd/json,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@f235d1{/history/app-20170317232631-0001/environment,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1a7ac8bb{/history/app-20170317232631-0001/environment/json,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@13d0c8cc{/history/app-20170317232631-0001/executors,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1956b608{/history/app-20170317232631-0001/executors/json,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@67ec7659{/static,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@32e2ffa3{/history/app-20170317232631-0001,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3eec84f8{/api,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@11f78e40{/jobs/job/kill,null,AVAILABLE}
+17/03/17 23:28:05 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@631a28ce{/stages/stage/kill,null,AVAILABLE}
+17/03/17 23:31:18 INFO history.ApplicationCache: Failed to load application attempt app-20170317232855-0002/None
+17/03/17 23:31:18 INFO history.ApplicationCache: Failed to load application attempt app-20170317232855-0002/Some(jobs)
+17/03/17 23:34:04 ERROR history.HistoryServer: RECEIVED SIGNAL TERM
+17/03/17 23:34:04 INFO server.ServerConnector: Stopped ServerConnector@345daff3{HTTP/1.1}{0.0.0.0:18080}
+17/03/17 23:34:04 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@53d1b9b3{/history,null,UNAVAILABLE}
+17/03/17 23:34:04 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@2b5825fa{/static,null,UNAVAILABLE}
+17/03/17 23:34:04 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@57eda880{/api,null,UNAVAILABLE}
+17/03/17 23:34:04 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@34997338{/json,null,UNAVAILABLE}
+17/03/17 23:34:04 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@65b3a85a{/,null,UNAVAILABLE}
+17/03/17 23:34:04 INFO util.ShutdownHookManager: Shutdown hook called

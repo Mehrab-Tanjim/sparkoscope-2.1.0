@@ -1,0 +1,201 @@
+Spark Command: /usr/lib/jvm/java-8-oracle/bin/java -cp /home/mehrab/spark-2.1.0-bin-custom-spark/conf/:/home/mehrab/spark-2.1.0-bin-custom-spark/jars/*:/home/mehrab/hadoop-2.7.3/etc/hadoop/ -Xmx1g org.apache.spark.deploy.master.Master --host Mehrab-Laptop --port 7077 --webui-port 8080
+========================================
+17/03/18 11:06:45 INFO master.Master: Started daemon with process name: 14233@localhost
+17/03/18 11:06:45 INFO util.SignalUtils: Registered signal handler for TERM
+17/03/18 11:06:45 INFO util.SignalUtils: Registered signal handler for HUP
+17/03/18 11:06:45 INFO util.SignalUtils: Registered signal handler for INT
+17/03/18 11:06:45 WARN util.Utils: Your hostname, localhost resolves to a loopback address: 127.0.0.1; using 192.168.10.101 instead (on interface wlan0)
+17/03/18 11:06:45 WARN util.Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/03/18 11:06:45 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/03/18 11:06:45 INFO spark.SecurityManager: Changing view acls to: mehrab
+17/03/18 11:06:45 INFO spark.SecurityManager: Changing modify acls to: mehrab
+17/03/18 11:06:45 INFO spark.SecurityManager: Changing view acls groups to: 
+17/03/18 11:06:45 INFO spark.SecurityManager: Changing modify acls groups to: 
+17/03/18 11:06:45 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mehrab); groups with view permissions: Set(); users  with modify permissions: Set(mehrab); groups with modify permissions: Set()
+17/03/18 11:06:46 INFO util.Utils: Successfully started service 'sparkMaster' on port 7077.
+17/03/18 11:06:46 INFO master.Master: Starting Spark master at spark://Mehrab-Laptop:7077
+17/03/18 11:06:46 INFO master.Master: Running Spark version 2.1.0
+17/03/18 11:06:46 INFO util.log: Logging initialized @1142ms
+17/03/18 11:06:46 INFO server.Server: jetty-9.2.z-SNAPSHOT
+17/03/18 11:06:46 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3f871a14{/app,null,AVAILABLE}
+17/03/18 11:06:46 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@45e034dd{/app/json,null,AVAILABLE}
+17/03/18 11:06:46 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@48e6de01{/,null,AVAILABLE}
+17/03/18 11:06:46 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@40bc1932{/json,null,AVAILABLE}
+17/03/18 11:06:46 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@476cfc8b{/static,null,AVAILABLE}
+17/03/18 11:06:46 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3ee7e67{/app/kill,null,AVAILABLE}
+17/03/18 11:06:46 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7d06becd{/driver/kill,null,AVAILABLE}
+17/03/18 11:06:46 INFO server.ServerConnector: Started ServerConnector@6fe06402{HTTP/1.1}{0.0.0.0:8080}
+17/03/18 11:06:46 INFO server.Server: Started @1249ms
+17/03/18 11:06:46 INFO util.Utils: Successfully started service 'MasterUI' on port 8080.
+17/03/18 11:06:46 INFO ui.MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://192.168.10.101:8080
+17/03/18 11:06:46 INFO server.Server: jetty-9.2.z-SNAPSHOT
+17/03/18 11:06:46 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@58754ad8{/,null,AVAILABLE}
+17/03/18 11:06:46 INFO server.ServerConnector: Started ServerConnector@36da8dde{HTTP/1.1}{Mehrab-Laptop:6066}
+17/03/18 11:06:46 INFO server.Server: Started @1291ms
+17/03/18 11:06:46 INFO util.Utils: Successfully started service on port 6066.
+17/03/18 11:06:46 INFO rest.StandaloneRestServer: Started REST server for submitting applications on port 6066
+17/03/18 11:06:46 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@360680f9{/metrics/master/json,null,AVAILABLE}
+17/03/18 11:06:46 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2eb7d992{/metrics/applications/json,null,AVAILABLE}
+17/03/18 11:06:46 INFO master.Master: I have been elected leader! New state: ALIVE
+17/03/18 11:06:49 INFO master.Master: Registering worker 192.168.10.101:43416 with 8 cores, 6.7 GB RAM
+17/03/18 11:45:17 INFO master.Master: Registering app SparkPCA
+17/03/18 11:45:17 INFO master.Master: Registered app SparkPCA with ID app-20170318114517-0000
+17/03/18 11:45:17 INFO master.Master: Launching executor app-20170318114517-0000/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 11:45:31 INFO master.Master: Received unregister request from application app-20170318114517-0000
+17/03/18 11:45:31 INFO master.Master: Removing app app-20170318114517-0000
+17/03/18 11:45:31 INFO master.Master: 127.0.0.1:49848 got disassociated, removing it.
+17/03/18 11:45:31 INFO master.Master: 192.168.10.101:59119 got disassociated, removing it.
+17/03/18 11:45:32 WARN master.Master: Got status update for unknown executor app-20170318114517-0000/0
+17/03/18 12:02:54 INFO master.Master: Registering app SparkPCA
+17/03/18 12:02:54 INFO master.Master: Registered app SparkPCA with ID app-20170318120254-0001
+17/03/18 12:02:54 INFO master.Master: Launching executor app-20170318120254-0001/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 12:03:16 INFO master.Master: Received unregister request from application app-20170318120254-0001
+17/03/18 12:03:16 INFO master.Master: Removing app app-20170318120254-0001
+17/03/18 12:03:17 INFO master.Master: 127.0.0.1:50788 got disassociated, removing it.
+17/03/18 12:03:17 INFO master.Master: 192.168.10.101:36101 got disassociated, removing it.
+17/03/18 12:03:17 WARN master.Master: Got status update for unknown executor app-20170318120254-0001/0
+17/03/18 12:13:34 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 12:13:34 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318121334-0002
+17/03/18 12:13:34 INFO master.Master: Launching executor app-20170318121334-0002/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 12:14:01 INFO master.Master: Received unregister request from application app-20170318121334-0002
+17/03/18 12:14:01 INFO master.Master: Removing app app-20170318121334-0002
+17/03/18 12:14:01 INFO master.Master: 127.0.0.1:50889 got disassociated, removing it.
+17/03/18 12:14:01 INFO master.Master: 192.168.10.101:58366 got disassociated, removing it.
+17/03/18 12:14:01 WARN master.Master: Got status update for unknown executor app-20170318121334-0002/0
+17/03/18 12:16:02 INFO master.Master: Registering app SparkPCA
+17/03/18 12:16:02 INFO master.Master: Registered app SparkPCA with ID app-20170318121602-0003
+17/03/18 12:16:02 INFO master.Master: Launching executor app-20170318121602-0003/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 12:16:17 INFO master.Master: Received unregister request from application app-20170318121602-0003
+17/03/18 12:16:17 INFO master.Master: Removing app app-20170318121602-0003
+17/03/18 12:16:17 INFO master.Master: 127.0.0.1:50929 got disassociated, removing it.
+17/03/18 12:16:17 INFO master.Master: 192.168.10.101:58267 got disassociated, removing it.
+17/03/18 12:16:17 WARN master.Master: Got status update for unknown executor app-20170318121602-0003/0
+17/03/18 12:56:11 INFO master.Master: Registering app SparkPCA
+17/03/18 12:56:11 INFO master.Master: Registered app SparkPCA with ID app-20170318125611-0004
+17/03/18 12:56:11 INFO master.Master: Launching executor app-20170318125611-0004/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 12:56:36 INFO master.Master: Received unregister request from application app-20170318125611-0004
+17/03/18 12:56:36 INFO master.Master: Removing app app-20170318125611-0004
+17/03/18 12:56:36 INFO master.Master: 127.0.0.1:52073 got disassociated, removing it.
+17/03/18 12:56:36 INFO master.Master: 192.168.10.101:60881 got disassociated, removing it.
+17/03/18 12:56:37 WARN master.Master: Got status update for unknown executor app-20170318125611-0004/0
+17/03/18 13:01:03 INFO master.Master: Registering app SparkPCA
+17/03/18 13:01:03 INFO master.Master: Registered app SparkPCA with ID app-20170318130103-0005
+17/03/18 13:01:03 INFO master.Master: Launching executor app-20170318130103-0005/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 13:01:20 INFO master.Master: Received unregister request from application app-20170318130103-0005
+17/03/18 13:01:20 INFO master.Master: Removing app app-20170318130103-0005
+17/03/18 13:01:20 INFO master.Master: 127.0.0.1:52136 got disassociated, removing it.
+17/03/18 13:01:20 INFO master.Master: 192.168.10.101:38941 got disassociated, removing it.
+17/03/18 13:01:21 WARN master.Master: Got status update for unknown executor app-20170318130103-0005/0
+17/03/18 13:09:29 INFO master.Master: Registering app SparkPCA
+17/03/18 13:09:29 INFO master.Master: Registered app SparkPCA with ID app-20170318130929-0006
+17/03/18 13:09:29 INFO master.Master: Launching executor app-20170318130929-0006/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 13:10:23 INFO master.Master: Received unregister request from application app-20170318130929-0006
+17/03/18 13:10:23 INFO master.Master: Removing app app-20170318130929-0006
+17/03/18 13:10:24 INFO master.Master: 127.0.0.1:52229 got disassociated, removing it.
+17/03/18 13:10:24 INFO master.Master: 192.168.10.101:57161 got disassociated, removing it.
+17/03/18 13:10:24 WARN master.Master: Got status update for unknown executor app-20170318130929-0006/0
+17/03/18 13:17:07 INFO master.Master: Registering app SparkPCA
+17/03/18 13:17:07 INFO master.Master: Registered app SparkPCA with ID app-20170318131707-0007
+17/03/18 13:17:07 INFO master.Master: Launching executor app-20170318131707-0007/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 13:18:04 INFO master.Master: Received unregister request from application app-20170318131707-0007
+17/03/18 13:18:04 INFO master.Master: Removing app app-20170318131707-0007
+17/03/18 13:18:04 INFO master.Master: 127.0.0.1:52316 got disassociated, removing it.
+17/03/18 13:18:04 INFO master.Master: 192.168.10.101:45141 got disassociated, removing it.
+17/03/18 13:18:05 WARN master.Master: Got status update for unknown executor app-20170318131707-0007/0
+17/03/18 13:18:43 INFO master.Master: Registering app SparkPCA
+17/03/18 13:18:43 INFO master.Master: Registered app SparkPCA with ID app-20170318131843-0008
+17/03/18 13:18:43 INFO master.Master: Launching executor app-20170318131843-0008/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 13:19:37 INFO master.Master: Received unregister request from application app-20170318131843-0008
+17/03/18 13:19:37 INFO master.Master: Removing app app-20170318131843-0008
+17/03/18 13:19:37 INFO master.Master: 127.0.0.1:52350 got disassociated, removing it.
+17/03/18 13:19:37 INFO master.Master: 192.168.10.101:33375 got disassociated, removing it.
+17/03/18 13:19:37 WARN master.Master: Got status update for unknown executor app-20170318131843-0008/0
+17/03/18 13:20:47 INFO master.Master: Registering app SparkPCA
+17/03/18 13:20:47 INFO master.Master: Registered app SparkPCA with ID app-20170318132047-0009
+17/03/18 13:20:47 INFO master.Master: Launching executor app-20170318132047-0009/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 13:21:43 INFO master.Master: Received unregister request from application app-20170318132047-0009
+17/03/18 13:21:43 INFO master.Master: Removing app app-20170318132047-0009
+17/03/18 13:21:43 INFO master.Master: 127.0.0.1:52396 got disassociated, removing it.
+17/03/18 13:21:43 INFO master.Master: 192.168.10.101:34999 got disassociated, removing it.
+17/03/18 13:21:43 WARN master.Master: Got status update for unknown executor app-20170318132047-0009/0
+17/03/18 13:29:04 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 13:29:04 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318132904-0010
+17/03/18 13:29:04 INFO master.Master: Launching executor app-20170318132904-0010/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 13:30:28 INFO master.Master: Received unregister request from application app-20170318132904-0010
+17/03/18 13:30:28 INFO master.Master: Removing app app-20170318132904-0010
+17/03/18 13:30:28 INFO master.Master: 127.0.0.1:52479 got disassociated, removing it.
+17/03/18 13:30:28 INFO master.Master: 192.168.10.101:32960 got disassociated, removing it.
+17/03/18 13:30:29 WARN master.Master: Got status update for unknown executor app-20170318132904-0010/0
+17/03/18 13:38:33 INFO master.Master: Registering app SparkPCA
+17/03/18 13:38:33 INFO master.Master: Registered app SparkPCA with ID app-20170318133833-0011
+17/03/18 13:38:33 INFO master.Master: Launching executor app-20170318133833-0011/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 13:39:04 INFO master.Master: Received unregister request from application app-20170318133833-0011
+17/03/18 13:39:04 INFO master.Master: Removing app app-20170318133833-0011
+17/03/18 13:39:04 INFO master.Master: 127.0.0.1:52575 got disassociated, removing it.
+17/03/18 13:39:04 INFO master.Master: 192.168.10.101:39880 got disassociated, removing it.
+17/03/18 13:39:04 WARN master.Master: Got status update for unknown executor app-20170318133833-0011/0
+17/03/18 14:13:31 INFO master.Master: Registering app pragmaticPPCA
+17/03/18 14:13:31 INFO master.Master: Registered app pragmaticPPCA with ID app-20170318141331-0012
+17/03/18 14:13:31 INFO master.Master: Launching executor app-20170318141331-0012/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 14:14:04 INFO master.Master: Received unregister request from application app-20170318141331-0012
+17/03/18 14:14:04 INFO master.Master: Removing app app-20170318141331-0012
+17/03/18 14:14:04 INFO master.Master: 127.0.0.1:54490 got disassociated, removing it.
+17/03/18 14:14:04 INFO master.Master: 192.168.10.101:56553 got disassociated, removing it.
+17/03/18 14:14:05 WARN master.Master: Got status update for unknown executor app-20170318141331-0012/0
+17/03/18 14:16:41 INFO master.Master: Registering app pragmaticPPCA
+17/03/18 14:16:41 INFO master.Master: Registered app pragmaticPPCA with ID app-20170318141641-0013
+17/03/18 14:16:41 INFO master.Master: Launching executor app-20170318141641-0013/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 14:17:46 INFO master.Master: Received unregister request from application app-20170318141641-0013
+17/03/18 14:17:46 INFO master.Master: Removing app app-20170318141641-0013
+17/03/18 14:17:46 INFO master.Master: 127.0.0.1:54539 got disassociated, removing it.
+17/03/18 14:17:46 INFO master.Master: 192.168.10.101:37453 got disassociated, removing it.
+17/03/18 14:17:47 WARN master.Master: Got status update for unknown executor app-20170318141641-0013/0
+17/03/18 14:19:39 INFO master.Master: Registering app pragmaticPPCA
+17/03/18 14:19:39 INFO master.Master: Registered app pragmaticPPCA with ID app-20170318141939-0014
+17/03/18 14:19:39 INFO master.Master: Launching executor app-20170318141939-0014/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 14:20:27 INFO master.Master: Received unregister request from application app-20170318141939-0014
+17/03/18 14:20:27 INFO master.Master: Removing app app-20170318141939-0014
+17/03/18 14:20:27 INFO master.Master: 127.0.0.1:54596 got disassociated, removing it.
+17/03/18 14:20:27 INFO master.Master: 192.168.10.101:35410 got disassociated, removing it.
+17/03/18 14:20:28 WARN master.Master: Got status update for unknown executor app-20170318141939-0014/0
+17/03/18 14:24:13 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 14:24:13 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318142413-0015
+17/03/18 14:24:13 INFO master.Master: Launching executor app-20170318142413-0015/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 14:25:13 INFO master.Master: Received unregister request from application app-20170318142413-0015
+17/03/18 14:25:13 INFO master.Master: Removing app app-20170318142413-0015
+17/03/18 14:25:13 INFO master.Master: 127.0.0.1:54668 got disassociated, removing it.
+17/03/18 14:25:13 INFO master.Master: 192.168.10.101:48592 got disassociated, removing it.
+17/03/18 14:25:13 WARN master.Master: Got status update for unknown executor app-20170318142413-0015/0
+17/03/18 14:28:21 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 14:28:21 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318142821-0016
+17/03/18 14:28:21 INFO master.Master: Launching executor app-20170318142821-0016/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 14:30:55 INFO master.Master: Received unregister request from application app-20170318142821-0016
+17/03/18 14:30:55 INFO master.Master: Removing app app-20170318142821-0016
+17/03/18 14:30:56 INFO master.Master: 127.0.0.1:54731 got disassociated, removing it.
+17/03/18 14:30:56 INFO master.Master: 192.168.10.101:40812 got disassociated, removing it.
+17/03/18 14:30:56 WARN master.Master: Got status update for unknown executor app-20170318142821-0016/0
+17/03/18 14:57:20 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 14:57:20 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318145720-0017
+17/03/18 14:57:20 INFO master.Master: Launching executor app-20170318145720-0017/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 14:57:54 INFO master.Master: Received unregister request from application app-20170318145720-0017
+17/03/18 14:57:54 INFO master.Master: Removing app app-20170318145720-0017
+17/03/18 14:57:54 INFO master.Master: 127.0.0.1:55062 got disassociated, removing it.
+17/03/18 14:57:54 INFO master.Master: 192.168.10.101:47844 got disassociated, removing it.
+17/03/18 14:57:54 WARN master.Master: Got status update for unknown executor app-20170318145720-0017/0
+17/03/18 14:59:04 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 14:59:04 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318145904-0018
+17/03/18 14:59:04 INFO master.Master: Launching executor app-20170318145904-0018/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 15:04:05 INFO master.Master: Received unregister request from application app-20170318145904-0018
+17/03/18 15:04:05 INFO master.Master: Removing app app-20170318145904-0018
+17/03/18 15:04:05 INFO master.Master: 127.0.0.1:55167 got disassociated, removing it.
+17/03/18 15:04:05 INFO master.Master: 192.168.10.101:54762 got disassociated, removing it.
+17/03/18 15:04:05 WARN master.Master: Got status update for unknown executor app-20170318145904-0018/0
+17/03/18 15:05:15 INFO master.Master: Registering app pragmaticPPCA_RandomRotation
+17/03/18 15:05:15 INFO master.Master: Registered app pragmaticPPCA_RandomRotation with ID app-20170318150515-0019
+17/03/18 15:05:15 INFO master.Master: Launching executor app-20170318150515-0019/0 on worker worker-20170318110648-192.168.10.101-43416
+17/03/18 15:06:19 INFO master.Master: Received unregister request from application app-20170318150515-0019
+17/03/18 15:06:19 INFO master.Master: Removing app app-20170318150515-0019
+17/03/18 15:06:19 INFO master.Master: 127.0.0.1:55334 got disassociated, removing it.
+17/03/18 15:06:19 INFO master.Master: 192.168.10.101:37012 got disassociated, removing it.
+17/03/18 15:06:19 WARN master.Master: Got status update for unknown executor app-20170318150515-0019/0
+17/03/18 16:24:12 ERROR master.Master: RECEIVED SIGNAL TERM
